@@ -1,0 +1,49 @@
+.icons{
+  text-align: right;
+  font-family: 'Open Sans';
+  word-spacing: 10px;
+}
+
+.container{
+	display: grid;
+	margin: 150px 50px 50px 100px;
+}
+
+.form-search[type='text']{
+  border-radius: 15px; 
+  width:500px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+.form-search[type='text']{
+  display:inline-block;
+}
+
+.form search{
+  position: absolute;
+  color: #99ccff;
+  padding: 12px;
+}
+
+.form micro{
+  position: absolute;
+  padding: 12px 520px;
+}
+
+.form key{
+  position: absolute;
+  padding: 12px 490px;
+}
+
+.mdc-fab--extended:hover {
+  font-weight: bold;
+    border: 1px solid #999;
+    color: black;
+}
+
+
+
+
+
+ 

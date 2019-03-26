@@ -1,96 +1,48 @@
-<!DOCTYPE HTML>
-<style>
+<!DOCTYPE html>
 
-.icons{
-  text-align: right;
-  font-family: 'Open Sans';
-  word-spacing: 10px;
-}
-
-.container{
-	display: grid;
-	margin: 150px 50px 50px 100px;
-}
-
-.form-search[type='text']{
-  border-radius: 15px; 
-  width:500px;
-  height: 40px;
-  padding-left: 40px;
-}
-
-.form-search[type='text']{
-  display:inline-block;
-}
-
-.form search{
-  position: absolute;
-  color: #99ccff;
-  padding: 12px;
-}
-
-.form micro{
-  position: absolute;
-  padding: 12px 520px;
-}
-
-.form key{
-  position: absolute;
-  padding: 12px 490px;
-}
-
-.mdc-fab--extended:hover {
-  font-weight: bold;
-    border: 1px solid #999;
-    color: black;
-}
-
-
-</style>  
 
 <head>
     <title>Google Homepage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
   
      
-  <body>
+<body>
   <div class = "icons">
   Gmail Grafika  
   <first class="fa fa-th fa-lg"></i>
   </div>
-  
-<div class = "container">
-    
 
-
-	
+  <div class = "container">
     <!-- GOOGLE IMG --> 
 	<center> 
     <div class="google">
-      <a href="#" id="google_logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150" width="500"/>
-	    
-</a>
-</center>
+      <a href="#" id="google_logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150" width="500"/>  
+      </a>
+  </center>
 
 
     </div>
-    
     <!-- FORM SEARCH -->  
-    <div class="form"> 
-	<center> 
-      <form>
+    <div class="form">
+	<center>
+        <div class="main">
+        <div id="input_container">
         <search class="fa fa-search fa-lg"></search>
         <micro class="fa fa-microphone fa-lg"></micro>
-        <key class="fa fa-laptop fa-lg"></key>
+        <key class="fa fa-keyboard-o fa-lg"></key>
         <label for="form-search"></label>
-        <input type="text" class="form-search" placeholder="Search Google">
+        <input id="myInput" type="text" class="form-search" placeholder="Search Google"  v-model="inputContent">
+        <v-autocompleter v-bind:input="inputContent" v-if="inputContent"></v-autocompleter>
+        </div>
         
 	</center>
-      </form>
-
-    </div>  
+ 
+    </div>
+    </div>
+    </div>    
     
     <!-- BUTTONS -->
     <div class= "buttons"> 
@@ -104,6 +56,14 @@
       </button>
 	</center>
     </div>
+  </div>
 </div>   
+
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="animals.js"></script>
+<script src="main.js"></script>
+
   </body>
 </html>
