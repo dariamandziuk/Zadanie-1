@@ -15,52 +15,38 @@
   <first class="fa fa-th fa-lg"></i>
   </div>
 
+  <center> 
   <div class = "container">
     <!-- GOOGLE IMG --> 
-	<center> 
+
     <div class="google">
-      <a href="#" id="google_logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" height="150" width="500"/>  
-      </a>
-  </center>
-
-
+      <a href="#" id="google_logo"><img src="./google_PNG19644.png" height="120" width="300"/></a>
     </div>
     <!-- FORM SEARCH -->  
     <div class="form">
-	<center>
         <div class="main">
         <div id="input_container">
         <search class="fa fa-search fa-lg"></search>
         <micro class="fa fa-microphone fa-lg"></micro>
         <key class="fa fa-keyboard-o fa-lg"></key>
         <label for="form-search"></label>
-        <input id="myInput" type="text" class="form-search" placeholder="Search Google"  v-model="inputContent">
+        <input id="myInput" type="text" class="form-search" placeholder="Search Google"  v-model="inputContent" >
         <v-autocompleter v-bind:input="inputContent" v-if="inputContent"></v-autocompleter>
         </div>
-        
-	</center>
+        </div>
+    </div>
  
-    </div>
-    </div>
-    </div>    
-    
     <!-- BUTTONS -->
-    <div class= "buttons"> 
-	<center> 
+  <div class= "buttons"> 
       <button class="mdc-fab mdc-fab--extended">
       <span class="mdc-fab__label">Google Search</span>
       </button>
-      
       <button class="mdc-fab mdc-fab--extended">
       <span class="mdc-fab__label">I'm Feeling Lucky</span>
       </button>
-	</center>
-    </div>
-  </div>
-</div>   
-
-</form>
-
+    </div>  
+</center>
+</div> 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="animals.js"></script>
 <script src="main.js"></script>
