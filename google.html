@@ -6,13 +6,17 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  
 </head>
   
      
 <body>
-  <div class = "icons">
-  Gmail Grafika  
-  <first class="fa fa-th fa-lg"></i>
+  <div class="icons">
+    <a href="https://gmail.com">Gmail</a>
+    <a href="https://www.google.pl/imghp?hl=pl&tab=wi&authuser=0">Grafika</a>
+  <first class="fa fa-th fa-lg">
   </div>
 
   <center> 
@@ -38,13 +42,25 @@
  
     <!-- BUTTONS -->
   <div class= "buttons"> 
-      <button class="mdc-fab mdc-fab--extended">
-      <span class="mdc-fab__label">Google Search</span>
-      </button>
-      <button class="mdc-fab mdc-fab--extended">
-      <span class="mdc-fab__label">I'm Feeling Lucky</span>
-      </button>
-    </div>  
+      <button class="mdc-button" style="color: black" v-if="!inputContent">Szukaj w Google</button>
+      <button class="mdc-button" style="color: black" v-if="!inputContent">Szczęśliwy traf</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+      <div class="info">
+          <p class="polska">Polska</p>
+      </div>
+      <div class="info">
+          <a class="footer-link-left" href="https://ads.google.com">Reklamuj się</a>
+          <a class="footer-link-left" href="https://www.google.com/services">Dla firm</a>
+          <a class="footer-link-left" href="https://about.google/intl">O nas</a>
+          <a class="footer-link-right" href="https://www.google.com/preferences">Ustawienia</a>
+          <a class="footer-link-right" href="https://policies.google.com/terms">Warunki</a>
+          <a class="footer-link-right" href="https://policies.google.com/privacy">Prywatność</a>
+      </div>
+  </footer>
+  
 </center>
 </div> 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

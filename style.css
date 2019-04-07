@@ -1,12 +1,24 @@
+@import 'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css';
+
+html {
+  overflow-x: hidden;
+}
+
 .icons{
   text-align: right;
   font-family: 'Open Sans';
   word-spacing: 10px;
 }
 
+a {
+    color: grey;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+
 .container{
 	display: grid;
-  margin: 150px 50px 50px 100px;
+  margin: 150px 0px 50px;
 }
 
 #google-logo{
@@ -16,15 +28,13 @@
   margin-right: 10px; 
 }
 
-.buttons{
-  margin-top: 10px;
-}
-
 .form-search[type='text']{
-  border-radius: 15px; 
-  width:500px;
+  border-radius: 30px; 
+  border: 1px rgb(223, 225, 229) solid;
+  width: 510px;
   height: 40px;
   padding-left: 40px;
+  box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
 }
 
 .form-search[type='text']{
@@ -47,40 +57,81 @@
   padding: 12px 490px;
 }
 
-.mdc-fab--extended:hover {
-  font-weight: bold;
-    border: 1px solid #999;
-    color: black;
+
+.buttons{
+  margin-top: 20px;
+  
 }
 
-.links {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 800px 0 0px;
-  color: rgb(119, 119, 119);
-  font-weight: bold;
+.mdc-button{
+  border-style: groove;
+  text-transform: initial;
 }
 
-.links:hover{
-  pointer-events:none;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.wszystko {
-  border-bottom: 3px solid blue;
-}
-
-.Link {
-  color: green;
-  text-decoration: underline;
+.info {
+  height: 41px;
+  width: 100%;
+  color: rgb(108, 110, 110);
+  background-color: rgb(242, 242, 242);
+  text-decoration: none;
+  font-size: 13px;
+  border-top: 1px rgb(228, 228, 228) solid;
   margin: 0;
 }
+
+.polska{
+  text-align: left;
+  margin-left: 15px;
+}
+
+.footer-link-left{
+  float: left;
+  padding: 15px;
+}
+
+.footer-link-right {
+  float: right;
+  padding: 15px;
+}
+  
+.menu ul{
+  margin: 0; padding: 0;
+  float: left;
+}
+  
+.menu ul li{
+  display: inline;
+}
+  
+.menu ul li a{
+  float: left; text-decoration: none;
+  color: black;
+  padding: 10.5px 11px;
+}
+  
+.menu ul li a:visited{
+  color: black;
+}
+  
+.menu ul li a:hover, .menu ul li a:focus{
+  color: #3333cc;
+  border-bottom: solid #3333cc;
+}
+
 
 .paragraph {
   color: rgb(119, 119, 119);
   margin: 0px;
 }
 
-.Results-wrapper{
+.results-wrapper{
   margin:  0 800px 0 130px;
 }
 
