@@ -1,0 +1,50 @@
+.menu ul{
+    margin: 0; padding: 0;
+    float: left;
+  }
+    
+  .menu ul li{
+    display: inline;
+  }
+    
+  .menu ul li a{
+    float: left; text-decoration: none;
+    color: black;
+    padding: 10.5px 11px;
+  }
+    
+  .menu ul li a:visited{
+    color: black;
+  }
+    
+  .menu ul li a:hover, .menu ul li a:focus{
+    color: #3333cc;
+    border-bottom: solid #3333cc;
+  }
+  
+  
+  .paragraph {
+    color: rgb(119, 119, 119);
+    margin: 0px;
+  }
+  
+  .results-wrapper{
+    margin:  0 800px 0 130px;
+  }
+
+  .Link{
+      color:green;
+  }
+  
+  .header{
+    color: #3333cc;
+    margin: 10px 0 0 0;
+  }
+  
+  .tab{
+    margin:  30px 800px 0 130px;
+    color: #3333cc;
+    font-size: 30px;
+    font-weight: bold;
+  }
+

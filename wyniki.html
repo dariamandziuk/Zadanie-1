@@ -3,8 +3,11 @@
 <head>
     <title>Google Search</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="wyniki-style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>    
 </head>
 
 
@@ -32,54 +35,29 @@
     </div>
     </header>
 
-    <nav class="menu">
+    <section id>
+    <div id="app">
+        <nav class="menu">
+
             <ul>
-            <li><a href="#wszystko">Wszystko</a></li>
-            <li><a href="#wiadomosci">Wiadomości</a></li>
-            <li><a href="#grafika">Grafika</a></li>
-            <li><a href="#zakupy">Zakupy</a></li>
-            <li><a href="#filmy">Filmy</a></li>
-            <li><a href="#wiecej">Więcej</a></li>
-            <li><a href="#ustawienia">Ustawienia</a></li>
-            <li><a href="#narzedzia">Narzędzia</a></li>
+            <li><router-link to="/wszystko">Wszystko</router-link></li>
+            <li><router-link to="/wiadomosci">Wiadomości</router-link></li>
+            <li><router-link to="/grafika">Grafika</router-link></li>
+            <li><router-link to="/zakupy">Zakupy</router-link></li>
+            <li><router-link to="/filmy">Filmy</router-link></li>
+            <li><router-link to="/wiecej">Więcej</router-link></li>
+            <li><router-link to="/ustawienia">Ustawienia</router-link></li>
+            <li><router-link to="/narzedzia">Narzędzia</router-link></li>
             </ul>
+
             <br style="clear:left"/>
         </nav>
 
-    <main class="results">
-            <div class="results-wrapper">
-                    <h2 class="header">Lorem Ipsum</h2>
-                        <a class="Link" >
-                        <p class="Link">https://lorem.com</p>
-                        </a>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non felis dictum
-                            tellus sagittis sollicitudin quis eu erat. Duis metus ante, tincidunt a justo et, auctor laoreet augue.
-                        </p>
-                </div>
-
-                <div class="results-wrapper">
-                        <h2 class="header">Lorem Ipsum</h2>
-                            <a class="Link" >
-                            <p class="Link">https://lorem.com</p>
-                            </a>
-                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non felis dictum
-                                tellus sagittis sollicitudin quis eu erat. Duis metus ante, tincidunt a justo et, auctor laoreet augue.
-                            </p>
-                    </div>
-
-                <div class="results-wrapper">
-                    <h2 class="header">Lorem Ipsum</h2>
-                        <a class="Link" >
-                        <p class="Link">https://lorem.com</p>
-                        </a>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non felis dictum
-                            tellus sagittis sollicitudin quis eu erat. Duis metus ante, tincidunt a justo et, auctor laoreet augue.
-                        </p>
-                </div>
-
-        </main>
-      
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>    
+            <router-view></router-view>
+        
+    </div>
+    <script type="text/javascript" src="router.js"></script>
+    </section>    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="animals.js"></script>
     <script src="main.js"></script>

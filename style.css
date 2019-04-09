@@ -60,7 +60,6 @@ a {
 
 .buttons{
   margin-top: 20px;
-  
 }
 
 .mdc-button{
@@ -68,6 +67,15 @@ a {
   text-transform: initial;
 }
 
+table {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  width: 500px;
+  margin-top: 10px;
+  background: white;
+  position: relative;
+}
 
 .footer {
   position: absolute;
@@ -101,41 +109,3 @@ a {
   padding: 15px;
 }
   
-.menu ul{
-  margin: 0; padding: 0;
-  float: left;
-}
-  
-.menu ul li{
-  display: inline;
-}
-  
-.menu ul li a{
-  float: left; text-decoration: none;
-  color: black;
-  padding: 10.5px 11px;
-}
-  
-.menu ul li a:visited{
-  color: black;
-}
-  
-.menu ul li a:hover, .menu ul li a:focus{
-  color: #3333cc;
-  border-bottom: solid #3333cc;
-}
-
-
-.paragraph {
-  color: rgb(119, 119, 119);
-  margin: 0px;
-}
-
-.results-wrapper{
-  margin:  0 800px 0 130px;
-}
-
-.header{
-  color: #3333cc;
-  margin: 20px 0 0 0;
-}
